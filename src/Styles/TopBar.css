@@ -1,0 +1,13 @@
+.top-bar{
+    height: 65px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.top-bar img.aerolab-logo{
+    margin-left: 4vw;
+    height: 50%;
+    flex-grow: 1;
+}

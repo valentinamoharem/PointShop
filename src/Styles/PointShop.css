@@ -1,0 +1,168 @@
+.no-scroll {
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.black-space {
+    position: absolute;
+    background-color: #00000057;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.black-space .shop-modal {
+    width: 40vw;
+    height: 20vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+.black-space .shop-modal .row-1 {
+    display: flex;
+    flex-direction: row;
+    margin: 2vh 2vw;
+    justify-content: center;
+    align-content: space-between;
+    width: 90%;
+}
+
+.black-space .shop-modal .row-2 {
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    margin: auto 0;
+}
+
+.black-space .shop-modal .row-1 .shop-modal-selector .point-selector {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.black-space .shop-modal .row-1 .shop-modal-selector .point-selector p {
+   width: 30%;
+   margin: 0 auto;
+}
+
+.black-space .shop-modal .row-1 .shop-modal-selector .point-selector .frst-row {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.black-space .shop-modal .row-1 .shop-modal-selector .point-selector #lst-row {
+    margin: 0 auto;
+}
+
+.black-space .shop-modal .row-1 .shop-modal-selector p {
+    margin-bottom: 1%;
+}
+
+.black-space .shop-modal .row-1 .shop-modal-selector .point-selector p.shop-option {
+    margin: 2%;
+    padding: 4%;
+    background-color: #aaa;
+    color: #777;
+    border-radius: 50px;
+    transition: 100ms linear;
+    overflow: wrap;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.black-space .shop-modal .row-1 .shop-modal-selector .point-selector p.shop-option:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #6fe7fa;
+    transition: 100ms linear;
+}
+
+.black-space .shop-modal .row-1 .shop-modal-selector .point-selector p.shop-option.selected {
+    color: #fff;
+    background-color: #6fe7fa;
+}
+
+.black-space .shop-modal .shop-modal-balance {
+    border-left: 1px solid gray;
+    height: 100%;
+    width: 35%;
+    margin: 0 3%;
+}
+
+.black-space .shop-modal .row-1 .shop-modal-balance p {
+    margin-left: 7%;
+    margin-bottom: 4%;
+}
+
+.black-space .shop-modal .row-1 .shop-modal-balance .balance {
+    flex-direction: row;
+    display: inline-flex;
+    background-color: #eee;
+    border-radius: 50px;
+    margin-left: 7%;
+    padding: 3% 7%;
+}
+
+.black-space .shop-modal .row-1 .shop-modal-balance .balance p {
+    margin: auto;
+}
+
+.black-space .shop-modal .row-2 button {
+    border-radius: 50px;
+    border: 1px solid rgb(129, 127, 127);
+    padding: 2%;
+    background-color: rgba(9,9,9,0);
+    color: rgb(104, 102, 102);
+    text-align: center;
+}
+
+.black-space .shop-modal .row-2 button:focus {
+    outline: none;
+    cursor: pointer;
+}
+
+.black-space .shop-modal .row-2 button.confirm {
+    margin-left: 2%;
+    background-color: #6fc7fa;
+    color: white;
+    font-weight: bold;
+}
+
+.black-space .shop-modal .row-2 button.confirm:focus {
+    background-color: #6fc7fa;
+}
+
+.black-space .shop-modal .row-2 button.confirm:hover {
+    background-color: #6fbbfa;
+    cursor: pointer;
+}
+
+.black-space .shop-modal .row-2 button.cancel {
+    
+}
+
+.black-space .shop-modal .row-2 button.cancel:focus {
+    background-color: #6fe7fa77;
+}
+
+.black-space .shop-modal .row-2 button.cancel:hover {
+    background-color: #fa6f6f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+

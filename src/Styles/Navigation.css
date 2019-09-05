@@ -1,0 +1,20 @@
+.navigation {
+    display: inline-flex;
+    width: 100%;
+}
+
+.navigation p.item-counter {
+    margin-right: 1vw;
+    padding: 1.5vh 1.5vw; /*If you change this, change padding in SortingBar.css - .sorting-bar p*/
+}
+
+.navigation .button-container {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navigation .button-container img.nav-btn:last-child{
+    margin-left: 1vw;
+}

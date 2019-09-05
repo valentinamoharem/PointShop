@@ -1,0 +1,36 @@
+.sorting-bar{
+    display: inline-flex;
+}
+
+.sorting-bar p.sort-text {
+    border-left: 0.5px solid #aaa;
+    padding-left: 1vw;
+    margin-left: 0;
+}
+
+.sorting-bar p {
+    padding: 1.5vh 1.5vw; /*If you change this, change padding in Navigation.css - .navigation p.item-counter*/
+}
+
+.sorting-bar p.sort-button {
+    background-color: #ddd;
+    color: #777;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.sorting-bar p.sort-button:hover{
+    background-color: #aaa;
+    color: #eee
+}
+.sorting-bar p.sort-button +  p.sort-button {
+    margin-left: 2vw;
+}
+
+.sorting-bar p.sort-button-selected {
+    color: #fff;
+    background-color: #6fe7fa;
+}
+.sorting-bar p.sort-button-selected:hover {
+    color: #fff;
+    background-color: #50b3c2;
+}

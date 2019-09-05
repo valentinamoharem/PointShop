@@ -1,0 +1,210 @@
+.product-item{
+    width: 20vw;
+    height: 20vw;
+    margin: 1vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all .3s ease-in-out;
+}
+.product-item:hover{
+    transform: translateY(-10px);
+}
+
+.product-item:hover .display-product img.buyBlue {
+    opacity: 0; 
+    transition: opacity .2s ease-in-out;
+}
+
+.product-item:hover .modal{
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.product-item .display-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 13vw;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-item .display-product .out-of-budget {
+    background-color: rgba(100, 100, 100, 0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    height: 2vw;
+    margin: 0.5vw;
+    border-radius: 50px;
+    padding: .5vw;
+    transition: opacity 150ms linear;
+}
+
+.product-item:hover .display-product .out-of-budget {
+    opacity: 0;
+    transition: opacity 200ms linear;
+}
+
+.product-item .display-product .out-of-budget img{
+    height: 2vw;
+    width: 2vw;
+    padding: 0;
+    margin: auto 0.3vw;
+}
+
+.product-item .display-product .out-of-budget p {
+    text-align: center;
+    font-size: 0.8em;
+    color: #eeeeee;
+    margin: auto 0.3vw;
+    padding: 0
+}
+.product-item .display-product img{
+    height: 42px;
+    padding: 1vh 1vh 0 0;
+    transition: opacity .2s ease-in-out; 
+    transform:translate(0);
+    opacity: 1;
+    
+}
+
+
+.product-item .product-info {
+    height: 7vw;
+    margin: 0 1vw;
+    border-top: 0.2px solid #ccc;
+}
+
+.product-item .product-info .product-category {
+    font-size: 0.8em;
+    color: #bbb;
+    margin: 0;
+    padding-top: 1.6vw;
+}
+.product-item .product-info .product-name{
+    margin: 0;
+    color: #777;
+    padding-top: 0.5vw;
+}
+
+.product-item .modal {
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    background-color: rgba(18,201,247, 0.7);
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    align-content: center;
+}
+
+.product-item .modal .modal-content .modal-buy-white {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.product-item .modal .modal-content .modal-buy-white img {
+    padding: 1vh 1vh 0 0;
+}
+
+.product-item .modal .modal-content .redeem-container {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.product-item .modal .modal-content .redeem-container .redeem-btn {
+    background-color: #fff;
+    color: #777;
+    border-radius: 50px;
+    padding: 4%;
+    text-align: center;
+    width: 80%;
+    font-size: 1em;
+    transition: background-color 200ms linear, color 150ms linear, all 200ms ease-in-out, font-size 200ms linear;
+}
+
+.product-item .modal .modal-content .redeem-container .redeem-btn:hover {
+    background-color: #ff8800;
+    color: #fff;
+    transition: background-color 200ms linear, color 150ms linear, all 200ms ease-in-out, font-size 200ms linear;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    font-weight: 500;
+    font-size: 1em;
+    
+}
+
+.product-item .modal .modal-content .modal-cost {
+    display: inline-flex;
+    align-items: flex-end;
+    height: 5vw;
+    color: white;
+    font-size: 1.6em;
+    width: 100%;
+    justify-content: center;
+}
+
+.product-item .modal .modal-content .modal-cost p.cost {
+    margin: 0;
+}
+
+.product-item .modal .modal-content .modal-cost img.coin {
+    height: 1em;
+    margin-left: .3vw;
+}
+
+.product-item .off-modal {
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    background-color: rgba(138, 138, 138, 0.7);
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.product-item .off-modal:hover {
+    opacity: 1;
+}
+
+.product-item .off-modal-content .off-modal-cost {
+    display: flex;
+    justify-content: center;
+}
+
+.product-item .off-modal-content .off-modal-cost img {
+    margin-left: .3vw;
+}
+
+.product-item .off-modal .off-modal-content .buy-points-container .buy-points-btn {
+    background-color: #fff;
+    color: #777;
+    border-radius: 50px;
+    padding: 4%;
+    text-align: center;
+    width: 80%;
+    font-size: 1em;
+    transition: background-color 200ms linear, color 150ms linear;
+    margin: 0 auto;
+}
+
+.product-item .off-modal .off-modal-content .buy-points-container .buy-points-btn:hover {
+    background-color: rgb(18,201,247);
+    color: #fff;
+    transition: background-color 200ms linear, color 150ms linear;
+    box-shadow: 0 2px 4px 0 rgba(13, 100, 122, 0.4), 0 3px 10px 0 rgba(13, 100, 122, 0.38);
+    font-weight: 500;
+    font-size: 1em;
+    cursor: pointer;
+}
